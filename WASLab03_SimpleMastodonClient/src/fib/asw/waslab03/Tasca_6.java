@@ -43,7 +43,6 @@ public class Tasca_6 {
 				System.out.println("*************************************************");
 				System.out.println("* Tag: "+ nomTag);
 				System.out.println("*************************************************");
-
 				
 				String output2 = Request.get("https://mastodont.cat/api/v1/timelines/tag/"+nomTag+"?limit=5")
 						.bodyString(body.toString(), ContentType.parse("application/json"))
